@@ -111,30 +111,108 @@ class: title-slide, left, bottom
 ### `r rmarkdown::metadata$institution`
 #### `r rmarkdown::metadata$event`, `r rmarkdown::metadata$date`
 
+
 ---
-
-
 # Feedforward Neural Networks 
 
 --
 
-.pull-left[ 
-```{r, echo=FALSE, out.width="90%", out.height="110%", fig.align="center"}
+.left-column[ 
+```{r, echo=FALSE, out.width="100%", out.height="110%", fig.align="center"}
 knitr::include_graphics("img/FNN.png")
 ``` 
 ]
 
 <br>
 
-<br>
 
 --
 
-$$
-\begin{equation}
-\text{NN}(x_i) = \gamma_0+\sum_{k=1}^q \gamma_k \phi \left( \sum_{j=0}^p \omega_{jk}x_{ji}\right)
-\end{equation}
-$$
+.right-column[ 
+```{r, echo=FALSE, out.width="95%", out.height="100%", fig.align="right"}
+knitr::include_graphics("img/nneq1.png")
+```  
+]
+
+---
+count: false
+# Feedforward Neural Networks 
+
+
+.left-column[ 
+```{r, echo=FALSE, out.width="100%", out.height="110%", fig.align="center"}
+knitr::include_graphics("img/FNN.png")
+``` 
+]
+
+<br>
+
+
+.right-column[ 
+```{r, echo=FALSE, out.width="95%", out.height="100%", fig.align="right"}
+knitr::include_graphics("img/nneq2.png")
+```  
+]
+
+---
+count: false
+# Feedforward Neural Networks 
+
+
+.left-column[ 
+```{r, echo=FALSE, out.width="100%", out.height="110%", fig.align="center"}
+knitr::include_graphics("img/FNN.png")
+``` 
+]
+
+<br>
+
+
+.right-column[ 
+```{r, echo=FALSE, out.width="95%", out.height="100%", fig.align="right"}
+knitr::include_graphics("img/nneq3.png")
+```  
+]
+
+---
+count: false
+# Feedforward Neural Networks 
+
+
+.left-column[ 
+```{r, echo=FALSE, out.width="100%", out.height="110%", fig.align="center"}
+knitr::include_graphics("img/FNN.png")
+``` 
+]
+
+<br>
+
+
+.right-column[ 
+```{r, echo=FALSE, out.width="95%", out.height="100%", fig.align="right"}
+knitr::include_graphics("img/nneq4.png")
+```  
+]
+
+---
+count: false
+# Feedforward Neural Networks 
+
+
+.left-column[ 
+```{r, echo=FALSE, out.width="100%", out.height="110%", fig.align="center"}
+knitr::include_graphics("img/FNN.png")
+``` 
+]
+
+<br>
+
+
+.right-column[ 
+```{r, echo=FALSE, out.width="95%", out.height="100%", fig.align="right"}
+knitr::include_graphics("img/nneq5.png")
+```  
+]
 
 ---
 
@@ -421,8 +499,8 @@ plotnn(intnn)
 
 --
 
-```{r, echo=FALSE, out.width="70%", fig.align="center"}
-knitr::include_graphics("img/insurance-plotnn.png")
+```{r, echo=FALSE, out.width="90%", fig.align="center"}
+knitr::include_graphics("img/plotnn-1.png")
 ``` 
 
 
@@ -486,6 +564,24 @@ rug(jitter(intnn$X$children))
 axis(1, at= c(-0.90827, -0.0787, 0.751, 1.58, 2.41, 3.24), labels=0:5, cex.axis = 1.7)
 ```  
 ] 
+
+---
+# Summary
+
+--
+
+* Statistical-modelling approach to neural networks
+
+<br>
+--
+
+* Provide an R package to improve interpretability
+
+<br>
+--
+
+* Make neural networks more familiar in a statistical-modelling context
+
 ---
 class: bigger
 # References
